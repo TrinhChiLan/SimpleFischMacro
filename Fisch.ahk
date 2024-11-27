@@ -1,4 +1,5 @@
-﻿shakeIt() {
+﻿:*:dog::cat
+shakeIt() {
 	if WinActive("Roblox")
 	Send S
 	Send {Enter}
@@ -9,12 +10,13 @@ activate() {
 	Send \
 }
 
+#IfWinActive Roblox
 ^w::activate()
 ^e::shakeIt()
 z::activate()
 x::shakeIt()
+
 XButton1::activate()
 XButton2::shakeIt() 
-		
-		
-:*:dog::cat
+
+c::LButton
