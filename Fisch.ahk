@@ -1,16 +1,14 @@
-﻿:*:dog::cat
+#Requires AutoHotkey v2.0
+
 shakeIt() {
-	if WinActive("Roblox")
-	Send S
-	Send {Enter}
+	Send "s"
+	Send "{Enter}"
 }
-
 activate() {
-	if WinActive("Roblox")
-	Send \
+	Send "\"
+	; Send "{Shift}" ; For those whose UI navigation key is ~
 }
-
-#IfWinActive Roblox
+#HotIf WinActive("Roblox")
 ^w::activate()
 ^e::shakeIt()
 z::activate()
@@ -20,3 +18,4 @@ XButton1::activate()
 XButton2::shakeIt() 
 
 c::LButton
+#HotIf
