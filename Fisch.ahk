@@ -1,12 +1,9 @@
-﻿:*:dog::cat
-shakeIt() {
-	if WinActive("Roblox")
-	Send S
+﻿shakeIt() {
+	Send s
 	Send {Enter}
 }
 
 activate() {
-	if WinActive("Roblox")
 	Send \
 }
 
