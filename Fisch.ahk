@@ -1,10 +1,10 @@
 ﻿shakeIt() {
-	Send s
 	Send {Enter}
 }
 
 activate() {
 	Send \
+	Send a
 }
 
 #IfWinActive Roblox
